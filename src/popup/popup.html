@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EtuTools - Easy-to-use Tools</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="../tools/tools.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header with title and theme toggle -->
+    <div class="popup-header">
+      <div class="popup-title">
+        <span class="popup-title-icon">🛠️</span>
+        <span>EtuTools</span>
+      </div>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search 38 tools...">
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <!-- Category Chips -->
+    <div class="category-chips" id="categoryChips">
+      <button class="chip active" data-category="all">All</button>
+      <button class="chip" data-category="developer">Dev</button>
+      <button class="chip" data-category="text">Text</button>
+      <button class="chip" data-category="encryption">Crypto</button>
+      <button class="chip" data-category="time">Time</button>
+      <button class="chip" data-category="image">Image</button>
+      <button class="chip" data-category="utilities">Utils</button>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="tools-grid" id="toolsGrid">
+      <!-- Tools will be dynamically inserted -->
+    </div>
+
+    <!-- Tool display area -->
+    <div id="toolDisplay" style="display: none; padding: 12px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+        <h3 id="toolTitle" style="margin: 0; font-size: 14px;">Tool Name</h3>
+        <button id="closeTool" class="btn-secondary" style="padding: 4px 10px; font-size: 12px;">✕ Close</button>
+      </div>
+      <div id="toolWorkspace"></div>
+    </div>
+  </div>
+
+  <script type="module" src="popup.ts"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EtuTools - Side Panel</title>
+  <link rel="stylesheet" href="sidepanel.css">
+  <link rel="stylesheet" href="../tools/tools.css">
+</head>
+<body>
+  <div class="sidepanel-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>EtuTools</h1>
+        <input type="text" id="sidebarSearch" placeholder="Search 38 tools...">
+      </div>
+
+      <nav class="categories" id="categoriesNav">
+        <!-- Categories will be dynamically inserted -->
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="theme-toggle-sidepanel" id="themeToggleSidepanel">
+          <span class="theme-icon-sidepanel">🌙</span>
+          <span>Toggle Theme</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="tool-workspace">
+      <div id="toolContainer">
+        <div class="empty-state">
+          <div class="empty-state-icon">🛠️</div>
+          <h2>Welcome to EtuTools</h2>
+          <p>38 developer utilities at your fingertips</p>
+          <p style="margin-top: 8px; font-size: 12px;">Select a tool from the sidebar to get started</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="sidepanel.ts"></script>
+</body>
+</html>
