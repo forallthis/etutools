@@ -186,6 +186,15 @@
   box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
 }
 
+/* 批量密码列表中的复制按钮 */
+.password-list-container .btn-copy {
+  position: static;
+  padding: 6px 12px;
+  font-size: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* 错误提示 */
 .error-message {
   padding: 12px;
